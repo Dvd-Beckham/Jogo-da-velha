@@ -39,3 +39,7 @@ while opcao_menu != 4:
 		print("Vitorias de X: " + str(vitorias_x_5))
 		print("Vitorias de O: " + str(vitorias_o_5))
 		print("Empates: " + str(empates_5))
+	elif entrada_menu == "4":
+		opcao_menu = 4
+	else:
+		print("Opcao invalida. Digite 1, 2, 3 ou 4.")
