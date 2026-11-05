@@ -121,6 +121,24 @@ while opcao_menu != 4:
 				else:
 					print("Digite numeros validos entre 1 e " + str(tamanho) + ".")
 
+			# Procura uma sequencia vencedora nas quatro direcoes.
+			for linha in range(tamanho):
+				for coluna in range(tamanho):
+					if tabuleiro[linha][coluna] == jogador and vencedor == "":
+						for direcao in range(1, 5):
+							# Define a direcao horizontal, vertical ou diagonal.
+							if direcao == 1:
+								direcao_linha = 0
+								direcao_coluna = 1
+							elif direcao == 2:
+								direcao_linha = 1
+								direcao_coluna = 0
+							elif direcao == 3:
+								direcao_linha = 1
+								direcao_coluna = 1
+							else:
+								direcao_linha = 1
+								direcao_coluna = -1
 
 
 
