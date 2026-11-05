@@ -88,6 +88,27 @@ while opcao_menu != 4:
 
 			print("Vez do jogador " + jogador)
 
+			# Repete a leitura ate receber uma posicao livre e valida.
+			jogada_valida = 0
+			while jogada_valida == 0:
+				entrada_linha = input("Linha (1 a " + str(tamanho) + "): ")
+				entrada_coluna = input("Coluna (1 a " + str(tamanho) + "): ")
+
+				# Verifica os numeros sem usar metodos de texto.
+				linha_valida = 0
+				coluna_valida = 0
+
+				if entrada_linha == "1" or entrada_linha == "2" or entrada_linha == "3":
+					linha_valida = 1
+				if tamanho == 5:
+					if entrada_linha == "4" or entrada_linha == "5":
+						linha_valida = 1
+
+				if entrada_coluna == "1" or entrada_coluna == "2" or entrada_coluna == "3":
+					coluna_valida = 1
+				if tamanho == 5:
+					if entrada_coluna == "4" or entrada_coluna == "5":
+						coluna_valida = 1
 
 
 
