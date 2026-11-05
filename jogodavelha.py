@@ -69,5 +69,26 @@ else:
 		jogador = "X"
 		casas_vazias = tamanho * tamanho
 
+# Mantem a partida ativa enquanto houver jogadas e ninguem vencer.
+		while vencedor == "" and casas_vazias > 0:
+			# Desenha o tabuleiro e identifica o jogador da vez.
+			print("\n   ", end="")
+			for coluna in range(tamanho):
+				print(str(coluna + 1) + "   ", end="")
+			print()
+
+			for linha in range(tamanho):
+				print(str(linha + 1) + " ", end="")
+				for coluna in range(tamanho):
+					print("| " + tabuleiro[linha][coluna] + " ", end="")
+				print("|")
+				print("  ", end="")
+				for coluna in range(tamanho):
+					print("----", end="")
+				print("-")
+
+			print("Vez do jogador " + jogador)
+
+
 
 
