@@ -44,7 +44,7 @@ while opcao_menu != 4:
 	else:
 		print("Opcao invalida. Digite 1, 2, 3 ou 4.")
 		
-# Cria o tabuleiro escolhido e define quantas pecas vencem.
+	# Cria o tabuleiro escolhido e define quantas pecas vencem.
 	if iniciar_partida == 1:
 		if tamanho == 3:
 			tabuleiro = [
@@ -53,8 +53,7 @@ while opcao_menu != 4:
 				[" ", " ", " "]
 			]
 			quantidade_vitoria = 3
-			
-else:
+		else:
 			tabuleiro = [
 				[" ", " ", " ", " ", " "],
 				[" ", " ", " ", " ", " "],
@@ -69,7 +68,7 @@ else:
 		jogador = "X"
 		casas_vazias = tamanho * tamanho
 
-# Mantem a partida ativa enquanto houver jogadas e ninguem vencer.
+		# Mantem a partida ativa enquanto houver jogadas e ninguem vencer.
 		while vencedor == "" and casas_vazias > 0:
 			# Desenha o tabuleiro e identifica o jogador da vez.
 			print("\n   ", end="")
@@ -88,6 +87,7 @@ else:
 				print("-")
 
 			print("Vez do jogador " + jogador)
+
 
 
 
