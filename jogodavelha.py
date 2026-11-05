@@ -53,3 +53,21 @@ while opcao_menu != 4:
 				[" ", " ", " "]
 			]
 			quantidade_vitoria = 3
+			
+else:
+			tabuleiro = [
+				[" ", " ", " ", " ", " "],
+				[" ", " ", " ", " ", " "],
+				[" ", " ", " ", " ", " "],
+				[" ", " ", " ", " ", " "],
+				[" ", " ", " ", " ", " "]
+			]
+			quantidade_vitoria = 4
+
+		# Prepara o estado inicial da partida.
+		vencedor = ""
+		jogador = "X"
+		casas_vazias = tamanho * tamanho
+
+
+
