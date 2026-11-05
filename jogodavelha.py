@@ -43,3 +43,13 @@ while opcao_menu != 4:
 		opcao_menu = 4
 	else:
 		print("Opcao invalida. Digite 1, 2, 3 ou 4.")
+		
+# Cria o tabuleiro escolhido e define quantas pecas vencem.
+	if iniciar_partida == 1:
+		if tamanho == 3:
+			tabuleiro = [
+				[" ", " ", " "],
+				[" ", " ", " "],
+				[" ", " ", " "]
+			]
+			quantidade_vitoria = 3
