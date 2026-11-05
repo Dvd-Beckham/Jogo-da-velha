@@ -110,6 +110,17 @@ while opcao_menu != 4:
 					if entrada_coluna == "4" or entrada_coluna == "5":
 						coluna_valida = 1
 
+				if linha_valida == 1 and coluna_valida == 1:
+					linha = int(entrada_linha) - 1
+					coluna = int(entrada_coluna) - 1
+					if tabuleiro[linha][coluna] == " ":
+						tabuleiro[linha][coluna] = jogador
+						jogada_valida = 1
+					else:
+						print("Essa casa ja foi ocupada. Escolha outra.")
+				else:
+					print("Digite numeros validos entre 1 e " + str(tamanho) + ".")
+
 
 
 
