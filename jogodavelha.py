@@ -198,6 +198,22 @@ while opcao_menu != 4:
 				empates_3 += 1
 			else:
 				empates_5 += 1
+		# Exibe o resultado e atualiza o placar correspondente.
+		if vencedor == "X":
+			print("Jogador X venceu!")
+			if tamanho == 3:
+				vitorias_x_3 += 1
+			else:
+				vitorias_x_5 += 1
+		elif vencedor == "O":
+			print("Jogador O venceu!")
+			if tamanho == 3:
+				vitorias_o_3 += 1
+			else:
+				vitorias_o_5 += 1
+
+print("Jogo encerrado.")
+
 
 				print("----", end="")
 			print("-")
