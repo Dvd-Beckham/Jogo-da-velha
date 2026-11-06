@@ -170,7 +170,6 @@ while opcao_menu != 4:
 						jogador = "O"
 					else:
 						jogador = "X"
-
 		# Exibe o tabuleiro final da partida.
 		print("\n   ", end="")
 		for coluna in range(tamanho):
@@ -184,12 +183,8 @@ while opcao_menu != 4:
 			print("|")
 			print("  ", end="")
 			for coluna in range(tamanho):
-		# Conta as casas vazias para identificar um empate.
-		vazias = 0
-		for i in range(tamanho):
-			for j in range(tamanho):
-				if tabuleiro[i][j] == " ":
-					vazias = vazias + 1
+				print("----", end="")
+			print("-")
 
 		# Registra empate somente quando nao ha vencedor nem espacos livres.
 		if vazias == 0 and vencedor == "":
@@ -213,7 +208,3 @@ while opcao_menu != 4:
 				vitorias_o_5 += 1
 
 print("Jogo encerrado.")
-
-
-				print("----", end="")
-			print("-")
