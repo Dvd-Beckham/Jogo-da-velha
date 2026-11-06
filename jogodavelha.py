@@ -1,7 +1,7 @@
 # Inicializa o placar separado para cada tamanho de tabuleiro.
 vitorias_x_3 = 0
 vitorias_o_3 = 0
-empates_3 = 0  
+empates_3 = 0
 
 vitorias_x_5 = 0
 vitorias_o_5 = 0
@@ -43,7 +43,7 @@ while opcao_menu != 4:
 		opcao_menu = 4
 	else:
 		print("Opcao invalida. Digite 1, 2, 3 ou 4.")
-		
+
 	# Cria o tabuleiro escolhido e define quantas pecas vencem.
 	if iniciar_partida == 1:
 		if tamanho == 3:
@@ -170,6 +170,7 @@ while opcao_menu != 4:
 						jogador = "O"
 					else:
 						jogador = "X"
+						
 		# Exibe o tabuleiro final da partida.
 		print("\n   ", end="")
 		for coluna in range(tamanho):
@@ -200,6 +201,7 @@ while opcao_menu != 4:
 				empates_3 += 1
 			else:
 				empates_5 += 1
+
 		# Exibe o resultado e atualiza o placar correspondente.
 		if vencedor == "X":
 			print("Jogador X venceu!")
