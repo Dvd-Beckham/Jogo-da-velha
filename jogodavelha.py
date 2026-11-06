@@ -171,3 +171,18 @@ while opcao_menu != 4:
 					else:
 						jogador = "X"
 
+		# Exibe o tabuleiro final da partida.
+		print("\n   ", end="")
+		for coluna in range(tamanho):
+			print(str(coluna + 1) + "   ", end="")
+		print()
+
+		for linha in range(tamanho):
+			print(str(linha + 1) + " ", end="")
+			for coluna in range(tamanho):
+				print("| " + tabuleiro[linha][coluna] + " ", end="")
+			print("|")
+			print("  ", end="")
+			for coluna in range(tamanho):
+				print("----", end="")
+			print("-")
