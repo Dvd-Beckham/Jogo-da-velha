@@ -162,4 +162,12 @@ while opcao_menu != 4:
 							if pecas_em_linha >= quantidade_vitoria:
 								vencedor = jogador
 
+			# Atualiza casas livres e alterna o jogador se nao houve vitoria.
+			if vencedor == "":
+				casas_vazias -= 1
+				if casas_vazias > 0:
+					if jogador == "X":
+						jogador = "O"
+					else:
+						jogador = "X"
 
