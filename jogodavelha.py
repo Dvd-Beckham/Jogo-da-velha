@@ -140,5 +140,26 @@ while opcao_menu != 4:
 								direcao_linha = 1
 								direcao_coluna = -1
 
+							# Conta as pecas consecutivas nessa direcao.
+							pecas_em_linha = 1
+							passo = 1
+							continuar_direcao = 1
+
+							while passo < quantidade_vitoria and continuar_direcao == 1:
+								proxima_linha = linha + direcao_linha * passo
+								proxima_coluna = coluna + direcao_coluna * passo
+
+								if proxima_linha >= 0 and proxima_linha < tamanho and proxima_coluna >= 0 and proxima_coluna < tamanho:
+									if tabuleiro[proxima_linha][proxima_coluna] == jogador:
+										pecas_em_linha += 1
+									else:
+										continuar_direcao = 0
+								else:
+									continuar_direcao = 0
+
+								passo += 1
+
+							if pecas_em_linha >= quantidade_vitoria:
+								vencedor = jogador
 
 
