@@ -186,6 +186,13 @@ while opcao_menu != 4:
 				print("----", end="")
 			print("-")
 
+		# Conta as casas vazias para identificar um empate.
+		vazias = 0
+		for i in range(tamanho):
+			for j in range(tamanho):
+				if tabuleiro[i][j] == " ":
+					vazias = vazias + 1
+
 		# Registra empate somente quando nao ha vencedor nem espacos livres.
 		if vazias == 0 and vencedor == "":
 			print("A partida terminou empatada!")
